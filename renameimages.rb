@@ -5,7 +5,6 @@ require "fileutils"
 include FileUtils
 
 images = Dir["images/*"]
-images.shuffle!
 i = 1
 images.each do |image|
 	unless File.basename(image, ".txt") == "images"

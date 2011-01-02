@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -wKU
+#!/opt/local/bin/ruby
 
 require "rubygems"
 require "appscript"
