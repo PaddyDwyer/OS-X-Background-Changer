@@ -11,11 +11,15 @@
 	</dict>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/kertap/terminal/_rvmruby</string>
-		<string>1.8.7</string>
+		<string>ruby</string>
 		<string><%= File.expand_path(File.dirname(__FILE__)) %>/cbg.rb</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string><%= ENV['HOME'] %>/.rbenv/bin:/usr/local/bin:<%= ENV['HOME'] %>/.rbenv/shims:<%= ENV['PATH'] %></string>
+	</dict>
 </dict>
 </plist>
